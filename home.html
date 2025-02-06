@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controls-App - HOME</title>
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+<body>
+    <main class="m-10">
+      <h1 id="WText" class="text-2xl pb-1 font-semibold"></h1>
+      <p class="text-sm pb-10">Selamat datang di <b>CONTROL RUMAHMU!</b></p>
+      <section class="grid grid-flow-row grid-cols-2">
+        <h1 class="text-xl mb-7"><b>RUANGAN</b> Kamu</h1>
+        <span class="text-right text-xl font-bold">20°</span>
+        <img src="./img/livingroom.svg" alt="livingroom" class="col-span-2 mx-auto">
+      </section>
+      <section class="flex w-full flex-col gap-3">
+        <h1 class="text-xl pt-7"><b>DEVICES</b> Kamu</h1>
+        <div class="card bg-red-200 rounded-box grid h-14 gap-2 place-items-center grid-cols-2" id="lamp_card">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+            </svg>
+          </span>
+          <label class="swap">
+            <input type="checkbox" id="toogle_lamp"/>
+            <div class="swap-on">ON</div>
+            <div class="swap-off">OFF</div>
+          </label>
+        </div>
+        <div class="card bg-red-200 rounded-box grid h-14 place-items-center grid-cols-2">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125Z" />
+            </svg>            
+          </span>
+          <label class="swap">
+            <input type="checkbox" />
+            <div class="swap-on">ON</div>
+            <div class="swap-off">OFF</div>
+          </label>
+        </div>
+      </section>
+    </main>
+    <div class="dock dock-sm">
+        <button class="dock-active">
+          <svg class="size-[1.2em]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="currentColor" stroke-linejoin="miter" stroke-linecap="butt"><polyline points="1 11 12 2 23 11" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"></polyline><path d="m5,13v7c0,1.105.895,2,2,2h10c1.105,0,2-.895,2-2v-7" fill="none" stroke="currentColor" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"></path><line x1="12" y1="22" x2="12" y2="18" fill="none" stroke="currentColor" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"></line></g></svg>
+        </button>
+        <button>
+          <svg class="size-[1.2em]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="currentColor" stroke-linejoin="miter" stroke-linecap="butt"><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"></circle><path d="m22,13.25v-2.5l-2.318-.966c-.167-.581-.395-1.135-.682-1.654l.954-2.318-1.768-1.768-2.318.954c-.518-.287-1.073-.515-1.654-.682l-.966-2.318h-2.5l-.966,2.318c-.581.167-1.135.395-1.654.682l-2.318-.954-1.768,1.768.954,2.318c-.287.518-.515,1.073-.682,1.654l-2.318.966v2.5l2.318.966c.167.581.395,1.135.682,1.654l-.954,2.318,1.768,1.768,2.318-.954c.518.287,1.073.515,1.654.682l.966,2.318h2.5l.966-2.318c.581-.167,1.135-.395,1.654-.682l2.318.954,1.768-1.768-.954-2.318c.287-.518.515-1.073.682-1.654l2.318-.966Z" fill="none" stroke="currentColor" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"></path></g></svg>
+        </button>
+      </div>
+</body>
+<script src="./script.js"></script>
+</html>
