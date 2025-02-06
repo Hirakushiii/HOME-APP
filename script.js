@@ -21,7 +21,7 @@ ToogleLamp.addEventListener('change', async () =>{
         localStorage.setItem('Lamp', true);
         try {
             // Mengirim request POST menggunakan Fetch API
-            const response = await fetch(`https://${ip}/led1`, {
+            const response = await fetch(`http://${ip}/led1`, {
               method: 'POST',
             });
           } catch (error) {
